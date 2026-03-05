@@ -14,9 +14,9 @@ Portifólio proficional completo com tecnologias meus projetos e serviços prest
 - Envio de contato pelo meu email
 
 ## 📷 Preview
-![Preview](/img/preview.png)
+![Preview](img/preview.png)
 
-![Preview](/img/preview2.png)
+![Preview](img/preview2.png)
 
 ## 🔗 Demo
 https://portifolio-joao-pedroso.vercel.app
