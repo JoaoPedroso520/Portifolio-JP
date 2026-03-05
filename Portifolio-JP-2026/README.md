@@ -15,7 +15,7 @@ Portifólio proficional completo com tecnologias meus projetos e serviços prest
 
 ## 📷 Preview
 ![Preview](img/preview.png)
-
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ![Preview](img/preview2.png)
 
 ## 🔗 Demo
