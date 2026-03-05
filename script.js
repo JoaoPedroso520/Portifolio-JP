@@ -521,6 +521,35 @@
     });
   }
 
+  function shouldBlockShortcut(event) {
+    const key = event.key.toLowerCase();
+
+    if (key === 'f12') {
+      return true;
+    }
+
+    if (!event.ctrlKey) {
+      return false;
+    }
+
+    if (key === 'u') {
+      return true;
+    }
+
+    return event.shiftKey && (key === 'i' || key === 'j');
+  }
+
+  function initInteractionRestrictions() {
+    document.addEventListener('contextmenu', (event) => {
+      event.preventDefault();
+    });
+
+    document.addEventListener('keydown', (event) => {
+      if (!shouldBlockShortcut(event)) return;
+      event.preventDefault();
+    });
+  }
+
   function init() {
     const reducedMotion = prefersReducedMotion();
 
@@ -537,7 +566,9 @@
     initInfiniteTickers();
     initNavigationObserver();
     initContactForm();
+    initInteractionRestrictions();
   }
 
   init();
 })();
+
