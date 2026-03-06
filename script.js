@@ -521,7 +521,18 @@
     });
   }
 
+  function isEditableTarget(target) {
+    if (!(target instanceof Element)) return false;
+    return target.closest(
+      'input, textarea, select, [contenteditable], [role="textbox"]'
+    ) !== null;
+  }
+
   function shouldBlockShortcut(event) {
+    if (isEditableTarget(event.target)) {
+      return false;
+    }
+
     const key = event.key.toLowerCase();
 
     if (key === 'f12') {
@@ -571,4 +582,3 @@
 
   init();
 })();
-
