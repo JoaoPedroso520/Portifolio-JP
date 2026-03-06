@@ -73,13 +73,6 @@ img {
   user-drag: none;
 }
 
-input,
-textarea,
-select {
-  -webkit-user-select: text;
-  user-select: text;
-}
-
 .bg-layer {
   position: fixed;
   inset: 0;

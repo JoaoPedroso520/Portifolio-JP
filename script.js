@@ -544,9 +544,6 @@
     const preventDefault = (event) => {
       event.preventDefault();
     };
-    const isEditableTarget = (target) =>
-      target instanceof Element &&
-      target.closest('input, textarea, select, [contenteditable]') !== null;
 
     document.addEventListener('contextmenu', preventDefault);
 
@@ -556,10 +553,7 @@
     });
 
     document.addEventListener('dragstart', preventDefault);
-    document.addEventListener('selectstart', (event) => {
-      if (isEditableTarget(event.target)) return;
-      preventDefault(event);
-    });
+    document.addEventListener('selectstart', preventDefault);
   }
 
   function init() {
