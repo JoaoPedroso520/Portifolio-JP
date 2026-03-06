@@ -521,25 +521,15 @@
     });
   }
 
-  function isEditableTarget(target) {
-    if (!(target instanceof Element)) return false;
-    return target.closest(
-      'input, textarea, select, [contenteditable], [role="textbox"]'
-    ) !== null;
-  }
-
   function shouldBlockShortcut(event) {
-    if (isEditableTarget(event.target)) {
-      return false;
-    }
-
     const key = event.key.toLowerCase();
+    const hasPrimaryModifier = event.ctrlKey || event.metaKey;
 
     if (key === 'f12') {
       return true;
     }
 
-    if (!event.ctrlKey) {
+    if (!hasPrimaryModifier) {
       return false;
     }
 
@@ -547,17 +537,28 @@
       return true;
     }
 
-    return event.shiftKey && (key === 'i' || key === 'j');
+    return event.shiftKey && (key === 'i' || key === 'j' || key === 'c');
   }
 
   function initInteractionRestrictions() {
-    document.addEventListener('contextmenu', (event) => {
+    const preventDefault = (event) => {
       event.preventDefault();
-    });
+    };
+    const isEditableTarget = (target) =>
+      target instanceof Element &&
+      target.closest('input, textarea, select, [contenteditable]') !== null;
+
+    document.addEventListener('contextmenu', preventDefault);
 
     document.addEventListener('keydown', (event) => {
       if (!shouldBlockShortcut(event)) return;
       event.preventDefault();
+    });
+
+    document.addEventListener('dragstart', preventDefault);
+    document.addEventListener('selectstart', (event) => {
+      if (isEditableTarget(event.target)) return;
+      preventDefault(event);
     });
   }
 
@@ -582,3 +583,4 @@
 
   init();
 })();
+

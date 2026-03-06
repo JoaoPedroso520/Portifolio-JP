@@ -36,11 +36,13 @@ body.dark {
 
 * {
   box-sizing: border-box;
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none;
 }
 
 html {
   scroll-behavior: smooth;
-  -webkit-text-size-adjust: 100%;
 }
 
 body {
@@ -58,35 +60,24 @@ body {
 img {
   display: block;
   max-width: 100%;
-  height: auto;
 }
 
 a {
   color: inherit;
 }
 
-.skip-link {
-  position: absolute;
-  top: 8px;
-  left: 8px;
-  z-index: 1300;
-  padding: 10px 14px;
-  border-radius: 10px;
-  background: var(--surface);
-  color: var(--text);
-  border: 1px solid var(--line);
-  text-decoration: none;
-  transform: translateY(-140%);
-  transition: transform 0.2s ease;
+a,
+button,
+img {
+  -webkit-user-drag: none;
+  user-drag: none;
 }
 
-.skip-link:focus-visible {
-  transform: translateY(0);
-}
-
-:where(a, button, input, textarea, select):focus-visible {
-  outline: 3px solid color-mix(in srgb, var(--primary) 65%, transparent);
-  outline-offset: 2px;
+input,
+textarea,
+select {
+  -webkit-user-select: text;
+  user-select: text;
 }
 
 .bg-layer {
@@ -192,7 +183,7 @@ body.dark .preload-logo {
   color: var(--text-soft);
 }
 
-.preload-box .preload-title {
+.preload-box h1 {
   margin: 0;
   font-size: clamp(2rem, 8vw, 4.2rem);
 }
@@ -863,6 +854,14 @@ body.dark .wa-hero-icon {
 
 .btn-more:hover svg{
   transform: translateX(4px);
+}
+
+:root{
+  --btn-border: rgba(0,0,0,0.2);
+}
+
+[data-theme="dark"]{
+  --btn-border: rgba(0, 0, 0, 0.2);
 }
 
 .btn-more{
