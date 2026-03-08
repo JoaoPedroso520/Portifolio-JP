@@ -72,7 +72,7 @@ img {
   -webkit-user-drag: none;
   user-drag: none;
 }
-<<<<<<< Updated upstream
+
 
 .bg-layer {
   position: fixed;
@@ -1198,7 +1198,6 @@ body.dark #formMessage.is-error {
     transform: none;
   }
 }
-=======
 
 .bg-layer {
   position: fixed;
@@ -2486,4 +2485,3 @@ body.dark #formMessage.is-error {
     transform: none;
   }
 }
->>>>>>> Stashed changes
