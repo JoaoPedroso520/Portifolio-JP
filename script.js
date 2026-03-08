@@ -1195,30 +1195,6 @@
     initRevealAnimations(reducedMotion);
     initCounters(reducedMotion);
     initInfiniteTickers();
-    initNavigationObserver();
-    initContactForm();
-    initInteractionRestrictions();
-  }
-
-  init();
-})();
-
-
-
-  function init() {
-    const reducedMotion = prefersReducedMotion();
-
-    initInlineIconAccessibility();
-    initExternalLinksSecurity();
-    initPreload();
-    initDynamicYear();
-    initImageDecodingHints();
-    initScrollProgressBar();
-    initMobileMenu();
-    initThemeToggle();
-    initRevealAnimations(reducedMotion);
-    initCounters(reducedMotion);
-    initInfiniteTickers();
     initProjectFilters();
     initNavigationObserver();
     initContactForm();
@@ -1226,6 +1202,7 @@
   }
 
   init();
+})();
 })();
 
 
