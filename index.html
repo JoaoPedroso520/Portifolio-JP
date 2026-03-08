@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 ﻿<!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -479,3 +480,479 @@
 
 </html>
 
+=======
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Joao Pedroso | Portfolio Front-end</title>
+  <link rel="icon" href="img/logo-jp.png">
+  <meta name="description"
+    content="Portfolio profissional de Joao Pedroso, desenvolvedor full-stack com foco em front-end, performance, responsividade e experiencia do usuario." />
+  <meta name="robots" content="index,follow,max-image-preview:large" />
+  <meta name="author" content="Joao Pedroso" />
+  <meta name="theme-color" content="#0e131b" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Joao Pedroso | Portfolio Front-end" />
+  <meta property="og:description" content="Portfolio profissional de Joao Pedroso com foco em front-end moderno, codigo limpo e alta performance." />
+  <meta property="og:image" content="img/logo-jp.png" />
+  <meta property="og:image:alt" content="Logo de Joao Pedroso" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Joao Pedroso | Portfolio Front-end" />
+  <meta name="twitter:description" content="Portfolio de front-end com foco em qualidade visual, performance e boas praticas." />
+  <meta name="twitter:image" content="img/logo-jp.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://images.unsplash.com" />
+  <link rel="preconnect" href="https://cdn.simpleicons.org" />
+  <link rel="dns-prefetch" href="//images.unsplash.com" />
+  <link rel="dns-prefetch" href="//cdn.simpleicons.org" />
+  <link rel="preload" href="img/logo-jp.png" as="image" fetchpriority="high" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@500;700;800&family=Outfit:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <script>
+    (function () {
+      try {
+        var savedTheme = localStorage.getItem('jp-theme');
+        var useDark = savedTheme === 'dark' || (savedTheme !== 'light' && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);
+        document.documentElement.classList.toggle('dark', useDark);
+      } catch (error) { }
+    })();
+  </script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div id="preload" aria-hidden="true">
+    <div class="preload-box">
+      <img class="preload-logo" src="img/logo-jp.png" alt="Logo JP">
+      <p>Loading Portfólio</p>
+      <h1>João Pedroso</h1>
+      <div class="preload-line"><span></span></div>
+    </div>
+  </div>
+
+  <div class="scroll-progress" aria-hidden="true"><span id="progressBar"></span></div>
+  <div class="bg-layer" aria-hidden="true"></div>
+
+  <header class="topbar" id="topo">
+    <div class="shell topbar-inner">
+      <a href="#home" class="brand" aria-label="Início">
+        <img src="img/logo-jp.png" alt="Logo João Pedroso" width="42" height="42" />
+        <span>
+          <strong>JOÃO PEDROSO</strong>
+          <small>Front-end | Full-stack</small>
+        </span>
+      </a>
+
+      <nav class="navbar" id="navbar" aria-label="Navegação principal">
+        <ul id="navList">
+          <li><a href="#home">Início</a></li>
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#services">Serviços</a></li>
+          <li><a href="#projects">Projetos</a></li>
+          <li><a href="#contact">Contato</a></li>
+        </ul>
+      </nav>
+
+      <div class="top-actions">
+        <button id="themeBtn" class="theme-btn" type="button" aria-label="Ativar tema escuro">
+          <svg class="icon-moon" aria-hidden="true" viewBox="0 0 312.812 312.812" width="18" height="18">
+            <path
+              d="M305.2 178.159c-3.2-.8-6.4 0-9.2 2-10.4 8.8-22.4 16-35.6 20.8-12.4 4.8-26 7.2-40.4 7.2-32.4 0-62-13.2-83.2-34.4-21.2-21.2-34.4-50.8-34.4-83.2 0-13.6 2.4-26.8 6.4-38.8 4.4-12.8 10.8-24.4 19.2-34.4 3.6-4.4 2.8-10.8-1.6-14.4-2.8-2-6-2.8-9.2-2-34 9.2-63.6 29.6-84.8 56.8-20.4 26.8-32.4 60-32.4 96 0 43.6 17.6 83.2 46.4 112s68 46.4 112 46.4c36.8 0 70.8-12.8 98-34 27.6-21.6 47.6-52.4 56-87.6 1.6-5.6-1.6-11.2-7.2-12.4z" />
+          </svg>
+          <svg class="icon-sun" aria-hidden="true" viewBox="0 0 45.16 45.16" width="18" height="18">
+            <path
+              d="M22.58 11.269c-6.237 0-11.311 5.075-11.311 11.312s5.074 11.312 11.311 11.312c6.236 0 11.311-5.074 11.311-11.312S28.816 11.269 22.58 11.269zM22.58 7.944a2.207 2.207 0 0 1-2.207-2.206V2.207a2.207 2.207 0 1 1 4.414 0v3.531a2.207 2.207 0 0 1-2.207 2.206zM22.58 37.215a2.207 2.207 0 0 0-2.207 2.207v3.53a2.207 2.207 0 1 0 4.414 0v-3.53a2.208 2.208 0 0 0-2.207-2.207zM32.928 12.231a2.208 2.208 0 0 1 0-3.121l2.497-2.497a2.207 2.207 0 1 1 3.121 3.121l-2.497 2.497a2.207 2.207 0 0 1-3.121 0zM12.231 32.93a2.205 2.205 0 0 0-3.121 0l-2.497 2.496a2.207 2.207 0 0 0 3.121 3.121l2.497-2.498a2.204 2.204 0 0 0 0-3.119zM37.215 22.58c0-1.219.988-2.207 2.207-2.207h3.531a2.207 2.207 0 1 1 0 4.413h-3.531a2.206 2.206 0 0 1-2.207-2.206zM7.944 22.58a2.207 2.207 0 0 0-2.207-2.207h-3.53a2.207 2.207 0 1 0 0 4.413h3.531a2.206 2.206 0 0 0 2.206-2.206zM32.928 32.93a2.208 2.208 0 0 1 3.121 0l2.497 2.497a2.205 2.205 0 1 1-3.121 3.12l-2.497-2.497a2.205 2.205 0 0 1 0-3.12zM12.231 12.231a2.207 2.207 0 0 0 0-3.121L9.734 6.614a2.207 2.207 0 0 0-3.121 3.12l2.497 2.497a2.205 2.205 0 0 0 3.121 0z" />
+          </svg>
+        </button>
+        <button id="menuBtn" class="menu-btn" type="button" aria-expanded="false" aria-controls="navbar"
+          aria-label="Abrir menu">
+          <span class="menu-btn__icon" aria-hidden="true">
+            <span class="menu-btn__bar"></span>
+            <span class="menu-btn__bar"></span>
+            <span class="menu-btn__bar"></span>
+          </span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section id="home" class="hero section">
+      <div class="shell hero-layout">
+        <div class="hero-left reveal">
+          <p class="label">Portfólio 2026</p>
+          <h2>
+            João Pedroso Front-End
+            <span>Design profissional, código limpo e experiência que gera resultado.</span>
+          </h2>
+          <p class="hero-copy">Sou desenvolvedor full-stack com foco em Front-end e transformo ideias em páginas
+            rápidas, responsivas e bem estruturadas para valorizar sua marca.</p>
+
+          <div class="hero-cta">
+            <a class="action solid" href="https://wa.me/5543996877731" target="_blank" rel="noopener noreferrer">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M20.52 3.48A11.79 11.79 0 0 0 12.05 0C5.46 0 .12 5.34.12 11.93c0 2.1.55 4.16 1.6 5.98L0 24l6.27-1.64a11.9 11.9 0 0 0 5.78 1.47h.01c6.58 0 11.93-5.34 11.93-11.93 0-3.19-1.24-6.18-3.47-8.42zM12.06 21.7c-1.78 0-3.53-.48-5.06-1.39l-.36-.21-3.72.97.99-3.63-.23-.37a9.78 9.78 0 0 1-1.5-5.14c0-5.4 4.39-9.79 9.79-9.79 2.61 0 5.07 1.02 6.91 2.86a9.72 9.72 0 0 1 2.87 6.92c0 5.4-4.39 9.78-9.79 9.78zm5.37-7.33c-.29-.14-1.71-.85-1.98-.95-.27-.1-.47-.14-.67.14-.2.29-.77.95-.95 1.15-.17.2-.35.22-.64.07-.29-.14-1.23-.45-2.34-1.44-.87-.78-1.46-1.74-1.63-2.03-.17-.29-.02-.44.13-.58.13-.13.29-.35.44-.52.14-.17.19-.29.29-.49.1-.2.05-.37-.02-.52-.07-.14-.67-1.61-.92-2.21-.24-.58-.48-.5-.67-.51l-.57-.01c-.2 0-.52.07-.79.37-.27.29-1.04 1.01-1.04 2.46s1.06 2.85 1.21 3.05c.14.2 2.09 3.19 5.06 4.47.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.09 1.71-.7 1.95-1.37.24-.67.24-1.24.17-1.37-.07-.12-.27-.2-.56-.34z" />
+          </svg>
+              <span>Abrir WhatsApp</span>
+            </a>
+            <a class="action soft" href="https://instagram.com/joao_pedroso_15" target="_blank"
+              rel="noopener noreferrer">
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M7.75 2C4.57 2 2 4.57 2 7.75v8.5C2 19.43 4.57 22 7.75 22h8.5C19.43 22 22 19.43 22 16.25v-8.5C22 4.57 19.43 2 16.25 2h-8.5zm0 2h8.5C18.01 4 20 5.99 20 7.75v8.5c0 1.76-1.99 3.75-3.75 3.75h-8.5C5.99 20 4 18.01 4 16.25v-8.5C4 5.99 5.99 4 7.75 4zm8.75 1.5a1.25 1.25 0 1 0 0 2.5 1.25 1.25 0 0 0 0-2.5zM12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6z" />
+          </svg>
+              <span>Abrir Instagram</span>
+            </a>
+            <a class="action soft" href="#projects">Ver projetos</a>
+          </div>
+
+          <div class="kpi-row">
+            <article class="kpi reveal delay-1">
+              <strong data-counter="21" data-suffix="+">0</strong>
+              <span>anos</span>
+            </article>
+            <article class="kpi reveal delay-2">
+              <strong data-counter="100" data-suffix="%">0</strong>
+              <span>foco em Front-end</span>
+            </article>
+            <article class="kpi reveal delay-3">
+              <strong data-counter="24" data-suffix="h">0</strong>
+              <span>atenção em cada detalhe</span>
+            </article>
+          </div>
+        </div>
+
+        <div class="hero-right reveal delay-1">
+          <figure class="frame frame-main">
+            <img src="https://images.unsplash.com/photo-1518773553398-650c184e0bb3?auto=format&fit=crop&w=1500&q=80"
+              alt="Estação profissional para desenvolvimento Front-end" width="1500" height="1000"
+              fetchpriority="high" />
+          </figure>
+          <figure class="frame frame-top">
+            <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=900&q=80"
+              alt="Tela com código Front-end" width="900" height="700" loading="lazy" />
+          </figure>
+          <figure class="frame frame-bottom">
+            <img src="https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=900&q=80"
+              alt="Dashboard com componentes visuais" width="900" height="700" loading="lazy" />
+          </figure>
+        </div>
+      </div>
+
+      <div class="ticker reveal">
+        <div class="track" data-track>
+          <span>WEB DESIGN</span>
+          <span>UI EXPERIENCE</span>
+          <span>FRONT-END ENGINEERING</span>
+          <span>RESPONSIVE SYSTEM</span>
+          <span>MOTION & PERFORMANCE</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="shell about-layout">
+        <article class="about-card reveal">
+          <p class="label">Sobre</p>
+          <h3>Design moderno com estrutura técnica de verdade</h3>
+          <p>Cada projeto é construído para parecer premium: tipografia forte, hierarquia visual clara e animações que
+            valorizam o conteúdo sem exagero.</p>
+          <p>Meu foco é entregar uma presença digital profissional com código limpo e fácil de evoluir.</p>
+        </article>
+
+        <article class="highlight-card reveal delay-1">
+          <p class="label">Diferenciais</p>
+          <ul>
+            <li>Identidade visual consistente e elegante.</li>
+            <li>Estrutura responsiva em desktop, tablet e mobile.</li>
+            <li>Animações suaves e performance otimizada.</li>
+            <li>Código organizado para manutenção futura.</li>
+          </ul>
+        </article>
+      </div>
+
+      <div class="shell about-tech-loop reveal delay-2">
+        <p class="label">Linguagens e tecnologias</p>
+      </div>
+
+      <div class="ticker tech-ticker reveal delay-2">
+        <div class="track track-tech" data-track data-speed="82" data-min-duration="16">
+          <span class="tech-chip"><img src="https://cdn.simpleicons.org/html5/E34F26" alt="HTML5" width="16" height="16"
+              loading="lazy" />HTML5</span>
+          <span class="tech-chip"><img src="https://cdn.simpleicons.org/css/1572B6" alt="CSS3" width="16" height="16"
+              loading="lazy" />CSS3</span>
+          <span class="tech-chip"><img src="https://cdn.simpleicons.org/javascript/F7DF1E" alt="JavaScript" width="16"
+              height="16" loading="lazy" />JavaScript</span>
+          <span class="tech-chip"><img src="https://cdn.simpleicons.org/typescript/3178C6" alt="TypeScript" width="16"
+              height="16" loading="lazy" />TypeScript</span>
+          <span class="tech-chip"><img src="https://cdn.simpleicons.org/react/61DAFB" alt="React" width="16" height="16"
+              loading="lazy" />React</span>
+          <span class="tech-chip"><img src="https://cdn.simpleicons.org/node.js/5FA04E" alt="Node.js" width="16"
+              height="16" loading="lazy" />Node.js</span>
+          <span class="tech-chip"><img src="https://cdn.simpleicons.org/express/white" alt="Express.js" width="16"
+              height="16" loading="lazy" />Express.js</span>
+          <span class="tech-chip"><img src="https://cdn.simpleicons.org/git/F05032" alt="Git" width="16" height="16"
+              loading="lazy" />Git</span>
+          <span class="tech-chip"><img src="https://cdn.simpleicons.org/figma/F24E1E" alt="Figma" width="16" height="16"
+              loading="lazy" />Figma</span>
+          <span class="tech-chip"><img src="https://cdn.simpleicons.org/sass/CC6699" alt="Sass" width="16" height="16"
+              loading="lazy" />Sass</span>
+          <span class="tech-chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" width="16" height="16"
+              loading="lazy" />Java</span>
+          <span class="tech-chip"><img src="https://cdn.simpleicons.org/spring" alt="Java" width="16" height="16"
+              loading="lazy" />Spring</span>
+          <span class="tech-chip"><img src="https://cdn.simpleicons.org/python/3776AB" alt="Python" width="16"
+              height="16" loading="lazy" />Python</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <div class="shell">
+        <div class="section-head reveal">
+          <p class="label">Serviços</p>
+          <h3>Entrega completa de Front-end</h3>
+        </div>
+
+        <div class="service-board">
+          <article class="service-item reveal">
+            <span>01</span>
+            <h4>Landing Pages Premium</h4>
+            <p>Páginas comerciais com visual de impacto e CTA estratégica.</p>
+          </article>
+          <article class="service-item reveal delay-1">
+            <span>02</span>
+            <h4>Sites Institucionais</h4>
+            <p>Experiência elegante para empresas e profissionais.</p>
+          </article>
+          <article class="service-item reveal delay-2">
+            <span>03</span>
+            <h4>Refatoração de UI</h4>
+            <p>Transformação de páginas antigas para padrão moderno.</p>
+          </article>
+          <article class="service-item reveal delay-3">
+            <span>04</span>
+            <h4>Polimento Final</h4>
+            <p>Ajustes de performance, responsividade e acabamento visual.</p>
+          </article>
+          <article class="service-item reveal delay-5">
+            <span>05</span>
+            <h4>E-commerce</h4>
+            <p>Página de venda de produtos e plataforma de pagamentos.</p>
+          </article>
+          <article class="service-item reveal delay-6">
+            <span>06</span>
+            <h4>Integração de Equipamentos</h4>
+            <p>Integro sistemas com equipamentos para melhorar o fluxo de serviço de forma simples e eficiente.</p>
+          </article>
+          <article class="service-item reveal delay-7">
+            <span>07</span>
+            <h4>Automação de Rotinas</h4>
+            <p>Automatizo processos repetitivos do dia a dia para reduzir tempo operacional sem complicação.</p>
+          </article>
+          <article class="service-item reveal delay-8">
+            <span>08</span>
+            <h4>Painel de Controle Simples</h4>
+            <p>Crio painéis claros para acompanhar tarefas, status de equipamentos e resultados do serviço.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="shell">
+        <div class="section-head reveal">
+          <p class="label">Projetos</p>
+        </div>
+
+        <div class="project-mosaic">
+          <article class="project reveal">
+            <img src="img/tela1.png" alt="Projeto de landing page moderna" width="1400" height="920" loading="lazy" />
+            <div class="project-body">
+              <p>Landing</p>
+              <h4>New Life Cred & Soluções
+                <br>• Site online
+                <br>• Código privado
+              </h4>
+              <div class="project-actions">
+                <a href="https://newlifecredsolucoes.netlify.app/" target="_blank" rel="noopener noreferrer">
+                  <svg aria-hidden="true" viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor"
+                    stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M6 3h7v7" />
+                    <path d="M13 3L3 13" />
+                  </svg>
+                  <span>Acessar</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project reveal delay-1">
+            <img src="img/tela2.png" alt="Projeto de calculadora" width="1200" height="860" loading="lazy" />
+            <div class="project-body">
+              <p>Landing</p>
+              <h4>calculadora Financeira</h4>
+              <div class="project-actions">
+                <a href="https://calculadoras-financeiras-joaopedroso.netlify.app/" target="_blank"
+                  rel="noopener noreferrer">
+                  <svg aria-hidden="true" viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor"
+                    stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M6 3h7v7" />
+                    <path d="M13 3L3 13" />
+                  </svg>
+                  <span>Acessar</span>
+                </a>
+                <a href="https://github.com/JoaoPedroso520/Calculadora-Financeira" target="_blank" rel="noopener noreferrer" class="alt">
+                  <svg aria-hidden="true" viewBox="0 0 16 16" width="14" height="14">
+                    <path fill="currentColor"
+                      d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.65 7.65 0 0 1 2-.27c.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                  </svg>
+                  <span>GitHub</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project reveal delay-2 project-placeholder-card">
+            <img src="img/tela3.png" alt="Projeto de landing com animações personalizadas" width="1200" height="860"
+              loading="lazy" />
+            <div class="project-body">
+              <p>Landing</p>
+              <h4>Landing com animações personalizadas</h4>
+              <div class="project-actions">
+                <a href="https://perfil-jp.netlify.app/" target="_blank" rel="noopener noreferrer">
+                  <svg aria-hidden="true" viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor"
+                    stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M6 3h7v7" />
+                    <path d="M13 3L3 13" />
+                  </svg>
+                  <span>Acessar</span>
+                </a>
+                <a href="https://github.com/JoaoPedroso520/Perfil-JP" target="_blank" rel="noopener noreferrer" class="alt">
+                  <svg aria-hidden="true" viewBox="0 0 16 16" width="14" height="14">
+                    <path fill="currentColor"
+                      d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.65 7.65 0 0 1 2-.27c.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                  </svg>
+                  <span>GitHub</span>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+      <div class="projects-more reveal">
+        <a href="projetos.html" class="btn-more">
+          <span>Ver mais</span>
+
+          <svg viewBox="0 0 16 16" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 8h10" />
+            <path d="M9 4l4 4-4 4" />
+          </svg>
+
+        </a>
+      </div>
+    </section>
+
+
+    <section id="contact" class="section">
+      <div class="shell">
+        <div class="section-head reveal">
+          <p class="label">Contato</p>
+        </div>
+
+        <div class="contact-layout">
+          <article class="contact-card contact-card-compact whatsapp reveal">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M20.52 3.48A11.79 11.79 0 0 0 12.05 0C5.46 0 .12 5.34.12 11.93c0 2.1.55 4.16 1.6 5.98L0 24l6.27-1.64a11.9 11.9 0 0 0 5.78 1.47h.01c6.58 0 11.93-5.34 11.93-11.93 0-3.19-1.24-6.18-3.47-8.42zM12.06 21.7c-1.78 0-3.53-.48-5.06-1.39l-.36-.21-3.72.97.99-3.63-.23-.37a9.78 9.78 0 0 1-1.5-5.14c0-5.4 4.39-9.79 9.79-9.79 2.61 0 5.07 1.02 6.91 2.86a9.72 9.72 0 0 1 2.87 6.92c0 5.4-4.39 9.78-9.79 9.78zm5.37-7.33c-.29-.14-1.71-.85-1.98-.95-.27-.1-.47-.14-.67.14-.2.29-.77.95-.95 1.15-.17.2-.35.22-.64.07-.29-.14-1.23-.45-2.34-1.44-.87-.78-1.46-1.74-1.63-2.03-.17-.29-.02-.44.13-.58.13-.13.29-.35.44-.52.14-.17.19-.29.29-.49.1-.2.05-.37-.02-.52-.07-.14-.67-1.61-.92-2.21-.24-.58-.48-.5-.67-.51l-.57-.01c-.2 0-.52.07-.79.37-.27.29-1.04 1.01-1.04 2.46s1.06 2.85 1.21 3.05c.14.2 2.09 3.19 5.06 4.47.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.09 1.71-.7 1.95-1.37.24-.67.24-1.24.17-1.37-.07-.12-.27-.2-.56-.34z" />
+          </svg>
+            <h4>WhatsApp</h4>
+            <p>Conversa rápida para orçamento e alinhamento.</p>
+            <a href="https://wa.me/5543996877731" target="_blank" rel="noopener noreferrer">Enviar mensagem</a>
+          </article>
+
+          <form id="contactForm" class="contact-form reveal delay-2"
+            action="https://formsubmit.co/joaoclaudiocaleffipedroso520@gmail.com" method="POST">
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_subject" value="Novo contato via portfolio" />
+            <input type="hidden" name="_template" value="table" />
+            <input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true"
+              style="position:absolute;left:-9999px" />
+            <h4>Enviar mensagem</h4>
+
+            <label for="name">Nome</label>
+            <input id="name" name="name" type="text" placeholder="Seu nome" autocomplete="name" required />
+
+            <label for="email">E-mail</label>
+            <input id="email" name="email" type="email" placeholder="seuemail@dominio.com" autocomplete="email" required />
+
+            <label for="telefone">Telefone</label>
+            <input id="telefone" name="telefone" type="tel" placeholder="(00) 00000-0000" autocomplete="tel" inputmode="tel" required />
+
+            <label for="message">Mensagem</label>
+            <textarea id="message" name="message" rows="5" placeholder="Escreva sua mensagem" autocomplete="off" required></textarea>
+
+            <button type="submit">Enviar mensagem</button>
+            <p id="formMessage" aria-live="polite" aria-atomic="true" role="status" hidden></p>
+          </form>
+          <article class="contact-card contact-card-compact instagram reveal delay-1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M7.75 2C4.57 2 2 4.57 2 7.75v8.5C2 19.43 4.57 22 7.75 22h8.5C19.43 22 22 19.43 22 16.25v-8.5C22 4.57 19.43 2 16.25 2h-8.5zm0 2h8.5C18.01 4 20 5.99 20 7.75v8.5c0 1.76-1.99 3.75-3.75 3.75h-8.5C5.99 20 4 18.01 4 16.25v-8.5C4 5.99 5.99 4 7.75 4zm8.75 1.5a1.25 1.25 0 1 0 0 2.5 1.25 1.25 0 0 0 0-2.5zM12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6z" />
+            </svg>
+            <h4>Instagram</h4>
+            <p>Acompanhe meu conteúdo e referências visuais.</p>
+            <a href="https://instagram.com/joao_pedroso_15" target="_blank" rel="noopener noreferrer">
+              Abrir Instagram
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="shell footer-inner">
+      <p>&copy; <span id="year"></span> João Pedroso. Todos os direitos reservados.</p>
+      <div class="footer-links">
+        <a href="https://wa.me/5543996877731" target="_blank" rel="noopener noreferrer">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#25D366">
+            <path
+              d="M20.52 3.48A11.79 11.79 0 0 0 12.05 0C5.46 0 .12 5.34.12 11.93c0 2.1.55 4.16 1.6 5.98L0 24l6.27-1.64a11.9 11.9 0 0 0 5.78 1.47h.01c6.58 0 11.93-5.34 11.93-11.93 0-3.19-1.24-6.18-3.47-8.42zM12.06 21.7c-1.78 0-3.53-.48-5.06-1.39l-.36-.21-3.72.97.99-3.63-.23-.37a9.78 9.78 0 0 1-1.5-5.14c0-5.4 4.39-9.79 9.79-9.79 2.61 0 5.07 1.02 6.91 2.86a9.72 9.72 0 0 1 2.87 6.92c0 5.4-4.39 9.78-9.79 9.78zm5.37-7.33c-.29-.14-1.71-.85-1.98-.95-.27-.1-.47-.14-.67.14-.2.29-.77.95-.95 1.15-.17.2-.35.22-.64.07-.29-.14-1.23-.45-2.34-1.44-.87-.78-1.46-1.74-1.63-2.03-.17-.29-.02-.44.13-.58.13-.13.29-.35.44-.52.14-.17.19-.29.29-.49.1-.2.05-.37-.02-.52-.07-.14-.67-1.61-.92-2.21-.24-.58-.48-.5-.67-.51l-.57-.01c-.2 0-.52.07-.79.37-.27.29-1.04 1.01-1.04 2.46s1.06 2.85 1.21 3.05c.14.2 2.09 3.19 5.06 4.47.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.09 1.71-.7 1.95-1.37.24-.67.24-1.24.17-1.37-.07-.12-.27-.2-.56-.34z" />
+          </svg>
+          <span>WhatsApp</span>
+        </a>
+
+        <a href="https://instagram.com/joao_pedroso_15" target="_blank" rel="noopener noreferrer">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#E4405F">
+            <path
+              d="M7.75 2C4.57 2 2 4.57 2 7.75v8.5C2 19.43 4.57 22 7.75 22h8.5C19.43 22 22 19.43 22 16.25v-8.5C22 4.57 19.43 2 16.25 2h-8.5zm0 2h8.5C18.01 4 20 5.99 20 7.75v8.5c0 1.76-1.99 3.75-3.75 3.75h-8.5C5.99 20 4 18.01 4 16.25v-8.5C4 5.99 5.99 4 7.75 4zm8.75 1.5a1.25 1.25 0 1 0 0 2.5 1.25 1.25 0 0 0 0-2.5zM12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6z" />
+          </svg>
+          <span>Instagram</span>
+        </a>
+
+        <a href="https://www.linkedin.com/in/joão-pedroso-" target="_blank" rel="noopener noreferrer">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0A66C2">
+            <path
+              d="M20.447 20.452H16.9V14.84c0-1.337-.025-3.06-1.865-3.06-1.868 0-2.154 1.459-2.154 2.967v5.705H9.337V9h3.4v1.561h.049c.474-.9 1.635-1.849 3.364-1.849 3.597 0 4.26 2.368 4.26 5.455v6.285zM5.337 7.433c-1.144 0-2.068-.927-2.068-2.07 0-1.144.924-2.069 2.068-2.069 1.143 0 2.068.925 2.068 2.069 0 1.143-.925 2.07-2.068 2.07zM7.119 20.452H3.555V9h3.564v11.452z" />
+          </svg>
+          <span>LinkedIn</span>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+
+</html>
+
+>>>>>>> Stashed changes
