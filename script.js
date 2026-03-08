@@ -1,4 +1,4 @@
-<<<<<<< Updated upstream
+
 (() => {
   'use strict';
 
@@ -522,7 +522,7 @@
     });
   }
 
-=======
+
 (() => {
   'use strict';
 
@@ -1126,7 +1126,7 @@
     });
   }
 
->>>>>>> Stashed changes
+
   function shouldBlockShortcut(event) {
     const key = event.key.toLowerCase();
     const hasPrimaryModifier = event.ctrlKey || event.metaKey;
@@ -1179,7 +1179,7 @@
       preventDefault(event);
     });
   }
-<<<<<<< Updated upstream
+
 
   function init() {
     const reducedMotion = prefersReducedMotion();
@@ -1203,7 +1203,7 @@
   init();
 })();
 
-=======
+
 
   function init() {
     const reducedMotion = prefersReducedMotion();
@@ -1228,4 +1228,4 @@
   init();
 })();
 
->>>>>>> Stashed changes
+
